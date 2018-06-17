@@ -1,0 +1,131 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+.container,
+.navbar {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* Плавні зміни властивостей лінків */
+a {
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+/*************************************/
+/* Зміни CSS коду розпочинати звідси */
+/*************************************/
+
+header .row {
+    min-height: 100vh;
+} 
+
+section {
+    min-height: 100vh;    /* !!! Тимчасово для відладки !!! Висота секцій рівна висоті екрану */
+    padding: 50px 0;  /* Внітрішні відступи зверху та знизу у секціях <section> */
+}
+
+
+header, #s2 {
+    background-color: #fff;
+}
+
+header {
+    background-image: url(../images/03.jpg);
+    background-size: 500px;
+    background-repeat: no-repeat;
+    background-position: 50% 35%;
+}
+
+#s1, #s2 {
+    display: flex;
+    align-items: center;
+}
+
+#s4 {
+    background-color: #fff; /* Колір фону для секцій #s2, #s4 */   
+}
+
+#s4 .row {
+    min-height: 80vh;
+}
+
+
+#title {
+    margin-top: 400px;
+}
+
+a {
+    color: #000;  /* Колір текстових лінків */
+}
+
+a:focus,
+a:hover {
+    color: #c00;  /* Колір текстових лінків для псевдокласів */
+}
+
+#image_gallery {
+    width: 500px;
+    margin: 10px auto 20px;
+    display: block;
+    
+}
+
+.ug-textpanel {
+    display: none !important;
+}
+
+p#contacts > a  {
+    margin-right: 10%;
+    color: #999;
+}
+
+p#contacts > a:hover {
+    color: #000;
+}
+p#contacts > a:last-child {
+    margin-right: 0;
+}
+
+#email {
+    margin-top: 200px;
+}
+#email_h1 {
+    color: #999;
+    border-bottom: 1px solid #fff;
+}
+
+#email_h1:hover {
+    color: #000;
+    text-decoration: none;
+    border-bottom: 2px solid #000;
+}
+
+#social {
+/*    margin-top: 8%;*/
+}
+@media screen and (max-width:575px) {
+    .container,
+    .navbar {
+        padding-left: 15px;    /* Для Small додати відступи */
+        padding-right: 15px;   /* зліва та справа у .container та .navbar */
+    }
+
+    /* Приклад зміни відступів зверху, знизу для секцій на Small екранах */
+
+    section {
+        padding: 25px 0;
+    }
+
+}
+
+@media screen and (max-width:767px) {
+
+}
+
+
